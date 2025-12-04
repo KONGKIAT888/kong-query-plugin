@@ -1,0 +1,91 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>me.kongkiat.kongquery</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+    <name>KongQuery</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://www.kongkiat.me">Kongkiat</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
+
+    <description><![CDATA[
+        <b>KongQuery</b> is the ultimate SQL companion for Spring Data JPA developers. This intelligent IntelliJ plugin
+        automatically formats your SQL queries and even generates Java projection interfaces — making your database code
+        cleaner, more readable, and more maintainable.<br><br>
+
+        It seamlessly detects inline SQL strings within your <b>@Query</b> and <b>@NativeQuery</b> annotations, transforming them
+        from messy one-liners into beautifully formatted queries with proper indentation, line breaks, and keyword alignment.<br><br>
+
+        <b>Key Features</b><br>
+        • <b>Auto-format SQL</b> inside @Query, @NativeQuery, and repository methods<br>
+        • <b>Generate Projection Interfaces</b> from SQL SELECT aliases (Alt+Shift+P on Windows/Linux, ⌥+⇧+P on macOS)<br>
+        • <b>Multi-dialect Support</b> - MySQL, PostgreSQL, Oracle, SQL Server, and more<br>
+        • <b>Smart Parameter Preservation</b> - keeps your placeholders and parameters intact<br>
+        • <b>Code Style Integration</b> - respects your existing formatting preferences<br>
+        • <b>Multiple Access Points</b> - auto-format on save, context menu, or keyboard shortcuts<br><br>
+
+        Whether you're writing complex joins or simple selects, KongQuery ensures your SQL looks as professional
+        as your Java code. Boost your productivity and code quality — because your queries deserve the same care
+        as the rest of your application.<br><br>
+
+        <b>Perfect for Spring Data JPA projects!</b> Works instantly with no configuration required.
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+    <depends>com.intellij.database</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <postFormatProcessor implementation="me.kongkiat.kongquery.KongQueryPostFormatProcessor" />
+        <intentionAction>
+            <className>me.kongkiat.kongquery.FormatQueryIntention</className>
+            <category>KongQuery</category>
+            <language>JAVA</language>
+        </intentionAction>
+    </extensions>
+
+    <applicationListeners>
+        <listener class="me.kongkiat.kongquery.KongQueryDocumentListener"
+                  topic="com.intellij.openapi.fileEditor.FileDocumentManagerListener" />
+    </applicationListeners>
+
+    <actions>
+        <action id="me.kongkiat.kongquery.FormatQueryAction"
+                class="me.kongkiat.kongquery.FormatQueryAction"
+                text="Format SQL Query (KongQuery)"
+                description="Formats SQL inside Spring Data JPA @Query annotations using KongQuery."
+                use-shortcut-of="ReformatCode" />
+
+        <action id="me.kongkiat.kongquery.GenerateProjectionAction"
+                class="me.kongkiat.kongquery.actions.GenerateProjectionAction"
+                text="Generate Projection Interface from SQL"
+                description="Generate a Java projection interface based on SQL SELECT aliases">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <keyboard-shortcut first-keystroke="alt shift P" keymap="$default"/>
+        </action>
+
+        <group id="me.kongkiat.kongquery.group"
+               text="Format SQL (KongQuery)"
+               description="KongQuery SQL Formatter"
+               popup="false">
+            <add-to-group group-id="EditorPopupMenu" anchor="last" />
+            <action
+                    id="me.kongkiat.kongquery.ContextMenuFormatAction"
+                    class="me.kongkiat.kongquery.ContextMenuFormatAction"
+                    text="Format SQL Query"
+                    description="Format SQL inside @Query/@NativeQuery annotations"
+                    icon="AllIcons.Actions.ReformatCode"
+                    use-shortcut-of="ReformatCode" />
+
+        </group>
+    </actions>
+</idea-plugin>

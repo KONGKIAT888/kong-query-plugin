@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a97c78d-72bf-4920-9dea-ef5b450b9996" name="Changes" comment="Add Makefile, update version and IntelliJ settings&#10;&#10;- Added `Makefile` for plugin deployment, build, and version management tasks.&#10;- Downgraded version to `25.4.1` in `build.gradle.kts`.&#10;- Updated IntelliJ project settings to specify Gradle JVM version (`21`).&#10;- Added IntelliJ platform test runtime configuration file for module artifacts." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kongquery" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;KONGKIAT888&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:KONGKIAT888/kong-query-plugin.git&quot;,
+    &quot;accountId&quot;: &quot;3a1afb19-7f45-4656-a7d9-bbb3d5bf6883&quot;
+  }
+}</component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.14.3-bin/cv11ve7ro1n3o1j4so8xd9n66/gradle-8.14.3" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/ms-21.0.9/Contents/Home" gradleVersion="8.14.3" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="35qSIzHjhV7WwW1ZzNGJgebxvca" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Run IDE with Plugin.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kongkiat/Developer/Github/kong-query/src/main/resources/META-INF",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a97c78d-72bf-4920-9dea-ef5b450b9996" name="Changes" comment="" />
+      <created>1763836033361</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763836033361</updated>
+      <workItem from="1763836034418" duration="2615000" />
+      <workItem from="1763839175442" duration="4604000" />
+      <workItem from="1763969839009" duration="863000" />
+      <workItem from="1763971030437" duration="330000" />
+      <workItem from="1763971376037" duration="236000" />
+      <workItem from="1763971631030" duration="3037000" />
+      <workItem from="1763981780196" duration="195000" />
+      <workItem from="1763981993667" duration="184000" />
+      <workItem from="1764047451372" duration="18000" />
+      <workItem from="1764066410219" duration="2180000" />
+      <workItem from="1764830910104" duration="5100000" />
+      <workItem from="1764838083367" duration="3797000" />
+      <workItem from="1764841982113" duration="204000" />
+      <workItem from="1764842312229" duration="41000" />
+    </task>
+    <task id="LOCAL-00001" summary="Remove deprecated SQL formatting actions and refactor related logic&#10;&#10;- Deleted `ContextMenuFormatAction`, `FormatQueryAction`, `FormatQueryIntention`, and `GenerateProjectionAction` classes.&#10;- Refactored SQL formatting features to streamline functionality and improve maintainability.">
+      <option name="closed" value="true" />
+      <created>1764838714160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764838714160</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Makefile, update version and IntelliJ settings&#10;&#10;- Added `Makefile` for plugin deployment, build, and version management tasks.&#10;- Downgraded version to `25.4.1` in `build.gradle.kts`.&#10;- Updated IntelliJ project settings to specify Gradle JVM version (`21`).&#10;- Added IntelliJ platform test runtime configuration file for module artifacts.">
+      <option name="closed" value="true" />
+      <created>1764841865481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764841865481</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove deprecated SQL formatting actions and refactor related logic&#10;&#10;- Deleted `ContextMenuFormatAction`, `FormatQueryAction`, `FormatQueryIntention`, and `GenerateProjectionAction` classes.&#10;- Refactored SQL formatting features to streamline functionality and improve maintainability." />
+    <MESSAGE value="Add Makefile, update version and IntelliJ settings&#10;&#10;- Added `Makefile` for plugin deployment, build, and version management tasks.&#10;- Downgraded version to `25.4.1` in `build.gradle.kts`.&#10;- Updated IntelliJ project settings to specify Gradle JVM version (`21`).&#10;- Added IntelliJ platform test runtime configuration file for module artifacts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Makefile, update version and IntelliJ settings&#10;&#10;- Added `Makefile` for plugin deployment, build, and version management tasks.&#10;- Downgraded version to `25.4.1` in `build.gradle.kts`.&#10;- Updated IntelliJ project settings to specify Gradle JVM version (`21`).&#10;- Added IntelliJ platform test runtime configuration file for module artifacts." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

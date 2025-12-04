@@ -1,0 +1,51 @@
+name: 🔄 Sync CHANGELOG.md to JetBrains Marketplace
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'CHANGELOG.md'
+
+jobs:
+  update-marketplace:
+    name: Update JetBrains Custom Page
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧩 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 📦 Read CHANGELOG.md and send to JetBrains Marketplace
+        env:
+          PAGE_ID: 62141
+          PLUGIN_ID: 28845
+          TOKEN: ${{ secrets.JETBRAINS_TOKEN }}
+        run: |
+          CONTENT=$(cat CHANGELOG.md)
+
+          BODY=$(jq -n \
+            --arg id "$PAGE_ID" \
+            --arg pluginId "$PLUGIN_ID" \
+            --arg name "Changelog" \
+            --arg url "changelog" \
+            --arg type "PUBLISH" \
+            --arg content "" \
+            --arg originalContent "$CONTENT" \
+            '{id: ($id|tonumber), pluginId: ($pluginId|tonumber), name: $name, url: $url, type: $type, content: $content, generateToc: false, originalContent: $originalContent, images: []}' \
+          )
+
+          echo "📤 Sending request to JetBrains Marketplace..."
+          echo "$BODY" | jq .
+
+          curl -s -o response.json -w "%{http_code}" \
+            -X PUT "https://plugins.jetbrains.com/api/plugins/$PLUGIN_ID/content-pages" \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "$BODY"
+
+          echo ""
+          echo "✅ Response:"
+          cat response.json
+
+      - name: ✅ Done
+        run: echo "CHANGELOG.md successfully synced to JetBrains Marketplace!"
