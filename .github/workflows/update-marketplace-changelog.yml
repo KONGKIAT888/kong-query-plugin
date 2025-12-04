@@ -17,8 +17,6 @@ jobs:
 
       - name: 📦 Read CHANGELOG.md and send to JetBrains Marketplace
         env:
-          PAGE_ID: 62141
-          PLUGIN_ID: 28845
           TOKEN: ${{ secrets.JETBRAINS_TOKEN }}
         run: |
           CONTENT=$(cat CHANGELOG.md)
