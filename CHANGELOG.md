@@ -22,5 +22,5 @@
 - **New:** Enhanced SQL Syntax Highlighting
   - Language injection support for both `@Query` and `@NativeQuery` annotations
   - Enables SQL code completion and IntelliSense inside annotations
-
+o
 ---
