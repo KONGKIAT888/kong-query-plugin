@@ -15,7 +15,7 @@ plugins {
 }
 
 group = "me.kongkiat"
-version = "25.4.1"
+version = "26.3.1"
 
 repositories {
     mavenCentral()

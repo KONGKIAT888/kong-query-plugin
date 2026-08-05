@@ -1,7 +1,8 @@
 # 🧩 KongQuery – Changelog
 
-## v25.4.1
-
+## v26.3.1
+- **New:** Change ICON
+  - Minor changes to the icon
 - **New:** Complete SQL formatter for Spring Data JPA `@Query` annotations
   - Automatically detects and formats SQL queries inside `@Query` and `@NativeQuery` annotations
   - Supports all major SQL dialects (MySQL, PostgreSQL, Oracle, SQL Server, etc.)
