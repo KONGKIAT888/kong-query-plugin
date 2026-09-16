@@ -51,6 +51,9 @@
             <category>KongQuery</category>
             <language>JAVA</language>
         </intentionAction>
+        <lang.inspectionSuppressor language="SQL"
+                                  implementationClass="me.kongkiat.kongquery.JsTsSqlInspectionSuppressor"/>
+        <highlightErrorFilter implementation="me.kongkiat.kongquery.JsTsSqlErrorFilter"/>
     </extensions>
 
     <applicationListeners>

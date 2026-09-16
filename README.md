@@ -73,6 +73,7 @@ public interface UserDto {
 - 🧩 **Multiple access methods** - Keyboard shortcuts, context menu, and automatic formatting
 - 📝 **Smart field extraction** - Handles both `AS` aliases and DTO constructor fields
 - 🟨 **JavaScript / TypeScript support** - Formats SQL inside template literals (backtick strings), preserving `${...}` interpolations
+- 🔕 **Suppresses false SQL errors** - Hides IDE inspection noise caused by `${...}` interpolations in JS/TS SQL strings
 
 ---
 
