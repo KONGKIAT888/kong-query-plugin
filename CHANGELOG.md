@@ -1,5 +1,15 @@
 # 🧩 KongQuery – Changelog
 
+## v26.4.0
+- **New:** JavaScript / TypeScript support
+  - Formats SQL inside template literals (backtick strings) in `.js`, `.jsx`, `.ts`, `.tsx`, `.mjs`, `.cjs` files
+  - Preserves `${...}` interpolations while formatting (e.g. pg / node-postgres placeholders)
+  - Available via `Ctrl+Alt+L` (⌘+⌥+L on macOS) and right-click → "Format SQL Query"
+  - Context menu item only appears when the file contains SQL in template literals
+- **Enhanced:** Projection Interface Generation now works in JS/TS files — select SQL and press Alt+Shift+P (⌥+⇧+P on macOS)
+
+---
+
 ## v26.3.1
 - **New:** Change ICON
   - Minor changes to the icon

@@ -7,8 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a97c78d-72bf-4920-9dea-ef5b450b9996" name="Changes" comment="Add Makefile, update version and IntelliJ settings&#10;&#10;- Added `Makefile` for plugin deployment, build, and version management tasks.&#10;- Downgraded version to `25.4.1` in `build.gradle.kts`.&#10;- Updated IntelliJ project settings to specify Gradle JVM version (`21`).&#10;- Added IntelliJ platform test runtime configuration file for module artifacts.">
+    <list default="true" id="8a97c78d-72bf-4920-9dea-ef5b450b9996" name="Changes" comment="Migrate release and development instructions to CONTRIBUTING.md, update IntelliJ configuration files, and set the new self-update lock date.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.intellijPlatform/self-update.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.intellijPlatform/self-update.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kongkiat/kongquery/ContextMenuFormatAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kongkiat/kongquery/ContextMenuFormatAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kongkiat/kongquery/FormatQueryAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kongkiat/kongquery/FormatQueryAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kongkiat/kongquery/actions/GenerateProjectionAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kongkiat/kongquery/actions/GenerateProjectionAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="35" />
+    <option name="cachedIndexableFilesCount" value="39" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="ExternalProjectsData">
@@ -66,23 +70,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.6605540099595748" />
-      <entry key="MS500" value="4.1589430422981675" />
-      <entry key="S2" value="9.011500256177873" />
-      <entry key="S5" value="12.549385725336396" />
-      <entry key="S10" value="14.460915541167976" />
-      <entry key="S30" value="16.069358031161354" />
-      <entry key="S60" value="16.52306385169448" />
-      <entry key="M2" value="16.758539695934758" />
-      <entry key="M5" value="16.902773342254235" />
-      <entry key="M10" value="17.024139773733484" />
-      <entry key="M15" value="17.65445156527371" />
-      <entry key="M30" value="23.456897777630786" />
-      <entry key="H1" value="36.86275964942013" />
-      <entry key="H2" value="51.81139015809386" />
-      <entry key="H4" value="63.08201085736248" />
-      <entry key="D1" value="75.21443833982698" />
-      <entry key="W1" value="77.59404890823176" />
+      <entry key="MS100" value="1.9570557341371275" />
+      <entry key="MS500" value="2.704771748521626" />
+      <entry key="S2" value="2.920572527091995" />
+      <entry key="S5" value="2.967748491514518" />
+      <entry key="S10" value="2.9837929502349745" />
+      <entry key="S30" value="2.994579470915777" />
+      <entry key="S60" value="2.9972874865233288" />
+      <entry key="M2" value="3.000610269169774" />
+      <entry key="M5" value="4.598465674904413" />
+      <entry key="M10" value="18.122229132600758" />
+      <entry key="M15" value="35.14828757767557" />
+      <entry key="M30" value="73.7121199564089" />
+      <entry key="H1" value="115.01832577460755" />
+      <entry key="H2" value="150.64778816941805" />
+      <entry key="H4" value="175.65177368443153" />
+      <entry key="D1" value="201.98531708427734" />
+      <entry key="W1" value="207.1237308153282" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -104,23 +108,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.6490836356869203" />
-      <entry key="MS500" value="4.152565648299932" />
-      <entry key="S2" value="9.006869521052472" />
-      <entry key="S5" value="12.546408258450034" />
-      <entry key="S10" value="14.459093502183073" />
-      <entry key="S30" value="16.068653288654406" />
-      <entry key="S60" value="16.522697468589122" />
-      <entry key="M2" value="16.758352846402808" />
-      <entry key="M5" value="16.90269770183123" />
-      <entry key="M10" value="17.02410093595039" />
-      <entry key="M15" value="17.65442075663137" />
-      <entry key="M30" value="23.456859289029094" />
-      <entry key="H1" value="36.86271365048194" />
-      <entry key="H2" value="51.81135222459836" />
-      <entry key="H4" value="63.08198625775944" />
-      <entry key="D1" value="75.2144332289635" />
-      <entry key="W1" value="77.59404814977782" />
+      <entry key="MS100" value="1.9394725939833315" />
+      <entry key="MS500" value="2.6988554297523963" />
+      <entry key="S2" value="2.918908604160419" />
+      <entry key="S5" value="2.967066564284043" />
+      <entry key="S10" value="2.983449197612243" />
+      <entry key="S30" value="2.9944642610180887" />
+      <entry key="S60" value="2.9972298029896263" />
+      <entry key="M2" value="3.0005813632241436" />
+      <entry key="M5" value="4.598440377438115" />
+      <entry key="M10" value="18.122159583693133" />
+      <entry key="M15" value="35.148193360166054" />
+      <entry key="M30" value="73.71201271418632" />
+      <entry key="H1" value="115.01823034205302" />
+      <entry key="H2" value="150.64771831685786" />
+      <entry key="H4" value="175.65173013939352" />
+      <entry key="D1" value="201.98530822030227" />
+      <entry key="W1" value="207.12372950294755" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -133,7 +137,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.Run IDE with Plugin.executor": "Debug",
+    "Gradle.Build kong-query-plugin.executor": "Run",
+    "Gradle.Run IDE with Plugin.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -141,13 +146,15 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/support-js-ts",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/thailife/Developer/Project/kong-query-plugin",
+    "last_opened_file_path": "/Users/kongkiat/Developer/Project/Github/kong-query-plugin",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
@@ -166,8 +173,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.22" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.22" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
       </set>
     </attachedChunks>
   </component>

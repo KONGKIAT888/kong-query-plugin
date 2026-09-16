@@ -4,6 +4,7 @@ import com.intellij.openapi.actionSystem.ActionUpdateThread;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
+import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiFile;
@@ -55,6 +56,9 @@ public class ContextMenuFormatAction extends AnAction {
         if (languageId.equalsIgnoreCase("SQL") || fileName.endsWith(".sql")) {
             // Handle standalone SQL files
             formatSqlFile(project, psiFile, editor);
+        } else if (JsTsQueryFormatter.isJsTsFile(psiFile)) {
+            // Handle JS/TS files with SQL in template literals
+            JsTsQueryFormatter.formatQueriesInFile(project, psiFile, editor, false);
         } else if (psiFile instanceof PsiJavaFile) {
             // Handle Java files with JPA annotations
             formatQueriesInFile(project, psiFile, editor, false);
@@ -87,6 +91,12 @@ public class ContextMenuFormatAction extends AnAction {
                     || psiFile.getName().toLowerCase().endsWith(".sql")) {
                 // Always show for SQL files
                 visible = true;
+            } else if (JsTsQueryFormatter.isJsTsFile(psiFile)) {
+                // Show for JS/TS files with SQL in template literals
+                Document doc = e.getData(CommonDataKeys.EDITOR) != null
+                        ? e.getData(CommonDataKeys.EDITOR).getDocument() : null;
+                visible = doc != null
+                        && !JsTsQueryFormatter.findSqlTemplateLiterals(doc.getText()).isEmpty();
             }
         }
 

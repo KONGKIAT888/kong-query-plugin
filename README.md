@@ -72,6 +72,7 @@ public interface UserDto {
 - 🌱 **Integrates seamlessly** with Spring Data JPA projects
 - 🧩 **Multiple access methods** - Keyboard shortcuts, context menu, and automatic formatting
 - 📝 **Smart field extraction** - Handles both `AS` aliases and DTO constructor fields
+- 🟨 **JavaScript / TypeScript support** - Formats SQL inside template literals (backtick strings), preserving `${...}` interpolations
 
 ---
 
@@ -118,6 +119,24 @@ public interface UserResponse {
 }
 
 ```
+
+### 🟨 SQL in JavaScript / TypeScript Files
+
+KongQuery also works in `.js`, `.jsx`, `.ts`, `.tsx` files (e.g. `pg` / node-postgres code):
+
+1. Open any JS/TS file containing SQL in a **template literal**
+2. Press **`Ctrl + Alt + L`** (**macOS:** `⌘ + ⌥ + L`) or right-click → **"Format SQL Query"**
+
+```sql
+UPDATE table_name
+SET column_a = v.column_a,
+    column_b = v.column_b
+FROM (VALUES ${placeholder}) AS v (id, column_a, column_b)
+WHERE table_name.id = v.id
+RETURNING *
+```
+
+`${...}` interpolations are preserved while formatting. You can also select SQL and press **`Alt + Shift + P`** (**macOS:** `⌥ + ⇧ + P`) to generate a projection interface, same as in Java.
 
 ### 🔄 Automatic Formatting
 
