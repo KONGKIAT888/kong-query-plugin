@@ -619,7 +619,11 @@ public class GenerateProjectionAction extends AnAction {
                 visible = "JAVA".equalsIgnoreCase(languageId) ||
                         "SQL".equalsIgnoreCase(languageId) ||
                         fileName.endsWith(".sql") ||
-                        fileName.endsWith(".java");
+                        fileName.endsWith(".java") ||
+                        fileName.endsWith(".js") ||
+                        fileName.endsWith(".jsx") ||
+                        fileName.endsWith(".ts") ||
+                        fileName.endsWith(".tsx");
             }
         }
 

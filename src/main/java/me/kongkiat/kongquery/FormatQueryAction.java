@@ -444,6 +444,10 @@ public class FormatQueryAction extends AnAction {
         PsiFile psiFile = e.getData(CommonDataKeys.PSI_FILE);
         Editor editor = e.getData(CommonDataKeys.EDITOR);
         if (project == null || psiFile == null) return;
-        formatQueriesInFile(project, psiFile, editor, false);
+        if (JsTsQueryFormatter.isJsTsFile(psiFile)) {
+            JsTsQueryFormatter.formatQueriesInFile(project, psiFile, editor, false);
+        } else {
+            formatQueriesInFile(project, psiFile, editor, false);
+        }
     }
 }
