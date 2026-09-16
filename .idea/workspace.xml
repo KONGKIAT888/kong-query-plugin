@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AIDiffSettings">
+    <option name="showAIDiff" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a97c78d-72bf-4920-9dea-ef5b450b9996" name="Changes" comment="Add Makefile, update version and IntelliJ settings&#10;&#10;- Added `Makefile` for plugin deployment, build, and version management tasks.&#10;- Downgraded version to `25.4.1` in `build.gradle.kts`.&#10;- Updated IntelliJ project settings to specify Gradle JVM version (`21`).&#10;- Added IntelliJ platform test runtime configuration file for module artifacts." />
+    <list default="true" id="8a97c78d-72bf-4920-9dea-ef5b450b9996" name="Changes" comment="Add Makefile, update version and IntelliJ settings&#10;&#10;- Added `Makefile` for plugin deployment, build, and version management tasks.&#10;- Downgraded version to `25.4.1` in `build.gradle.kts`.&#10;- Updated IntelliJ project settings to specify Gradle JVM version (`21`).&#10;- Added IntelliJ platform test runtime configuration file for module artifacts.">
+      <change beforePath="$PROJECT_DIR$/.intellijPlatform/self-update.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.intellijPlatform/self-update.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="35" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -51,6 +60,69 @@
   }
 }</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.14.3-bin/cv11ve7ro1n3o1j4so8xd9n66/gradle-8.14.3" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/ms-21.0.9/Contents/Home" gradleVersion="8.14.3" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.6605540099595748" />
+      <entry key="MS500" value="4.1589430422981675" />
+      <entry key="S2" value="9.011500256177873" />
+      <entry key="S5" value="12.549385725336396" />
+      <entry key="S10" value="14.460915541167976" />
+      <entry key="S30" value="16.069358031161354" />
+      <entry key="S60" value="16.52306385169448" />
+      <entry key="M2" value="16.758539695934758" />
+      <entry key="M5" value="16.902773342254235" />
+      <entry key="M10" value="17.024139773733484" />
+      <entry key="M15" value="17.65445156527371" />
+      <entry key="M30" value="23.456897777630786" />
+      <entry key="H1" value="36.86275964942013" />
+      <entry key="H2" value="51.81139015809386" />
+      <entry key="H4" value="63.08201085736248" />
+      <entry key="D1" value="75.21443833982698" />
+      <entry key="W1" value="77.59404890823176" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.6490836356869203" />
+      <entry key="MS500" value="4.152565648299932" />
+      <entry key="S2" value="9.006869521052472" />
+      <entry key="S5" value="12.546408258450034" />
+      <entry key="S10" value="14.459093502183073" />
+      <entry key="S30" value="16.068653288654406" />
+      <entry key="S60" value="16.522697468589122" />
+      <entry key="M2" value="16.758352846402808" />
+      <entry key="M5" value="16.90269770183123" />
+      <entry key="M10" value="17.02410093595039" />
+      <entry key="M15" value="17.65442075663137" />
+      <entry key="M30" value="23.456859289029094" />
+      <entry key="H1" value="36.86271365048194" />
+      <entry key="H2" value="51.81135222459836" />
+      <entry key="H4" value="63.08198625775944" />
+      <entry key="D1" value="75.2144332289635" />
+      <entry key="W1" value="77.59404814977782" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -63,13 +135,16 @@
   "keyToString": {
     "Gradle.Run IDE with Plugin.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/kongkiat/Developer/Github/kong-query/src/main/resources/META-INF",
+    "last_opened_file_path": "/Users/thailife/Developer/Project/kong-query-plugin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,8 +166,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.22" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.22" />
       </set>
     </attachedChunks>
   </component>
