@@ -1,5 +1,12 @@
 # 🧩 KongQuery – Changelog
 
+## v26.4.1
+- **New:** Suppress false-positive SQL inspections in JS/TS template literals
+    - Automatically hides syntax errors like `expected, got 'VALUES'` and `Unable to resolve table 'VALUES'` caused by `${...}` interpolations
+    - Plain SQL literals (without interpolations) still get full syntax checking and highlighting
+
+---
+
 ## v26.4.0
 - **New:** JavaScript / TypeScript support
   - Formats SQL inside template literals (backtick strings) in `.js`, `.jsx`, `.ts`, `.tsx`, `.mjs`, `.cjs` files
